@@ -1,0 +1,27 @@
+.auto-clear-cache-modal {
+    position: fixed;
+    margin: auto;
+    text-align: center;
+    height: fit-content;
+    inset: 0;
+    z-index: 999;
+    border-radius: 10px;
+    backdrop-filter: blur(3.5px);
+    padding: 30px 35px 30px 35px;
+    width: min(100% - 20px, 700px);
+    background: rgb(0 0 0 / 30%);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 1024px) {
+    .auto-clear-cache-modal {
+        padding: 20px 10px 20px 10px;
+    }
+}
+
+
+.auto-clear-cache-modal .auto-clear-cache-message {
+    color: white;
+    margin: 0;
+}
