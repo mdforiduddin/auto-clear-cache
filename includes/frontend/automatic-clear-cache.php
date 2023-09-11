@@ -44,10 +44,10 @@ class Automatic_Clear_Cache {
         if ( $auto_clear_cache_run_time ) {
             $auto_clear_cache_diff_time = current_time( 'timestamp' ) - strtotime( $auto_clear_cache_run_time );
 
-            // $twenty_four_hours = 24 * 60 * 60;
-            $twenty_four_hours = 20;
+            $twenty_four_hours = 24 * 60 * 60;
+            // $twenty_four_hours = 20;
 
-            echo $auto_clear_cache_diff_time;
+            // echo $auto_clear_cache_diff_time;
 
             if ( $auto_clear_cache_diff_time >= $twenty_four_hours ) {
                 update_option( 'auto_clear_cache_run_time', current_time( 'mysql' ) );
